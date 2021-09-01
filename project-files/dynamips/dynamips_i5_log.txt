@@ -1,0 +1,47 @@
+Sep 01 14:40:10.911 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 01 14:40:10.914 HYPERVISOR: Started on IP = localhost, TCP port = 25709.
+Sep 01 14:40:11.379 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 01 14:40:11.379 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips 
+Sep 01 14:40:11.381 GENERAL: working_dir=C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips
+Sep 01 14:40:11.381 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\379e5c81-801a-4dfc-a0e7-cb722bef37c9 
+Sep 01 14:40:11.383 GENERAL: working_dir=C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\379e5c81-801a-4dfc-a0e7-cb722bef37c9
+Sep 01 14:40:11.384 HYPERVISOR: exec_cmd: vm create R5 5 c7200 
+Sep 01 14:40:11.387 VM: VM R5 created.
+Sep 01 14:40:11.387 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5012 
+Sep 01 14:40:11.388 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Sep 01 14:40:11.388 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 01 14:40:11.388 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Sep 01 14:40:11.389 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Sep 01 14:40:11.389 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Sep 01 14:40:11.389 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 01 14:40:11.389 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60189214 
+Sep 01 14:40:11.391 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Sep 01 14:40:11.391 HYPERVISOR: exec_cmd: c7200 set_mac_addr R5 ca05.5958.0000 
+Sep 01 14:40:11.392 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Sep 01 14:40:11.392 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Sep 01 14:40:11.393 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 01 14:40:11.393 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 PA-4E 
+Sep 01 14:40:19.353 HYPERVISOR: exec_cmd: nio create_udp udp-6dfa6b00-b7a5-4d10-a688-fc54b678f913 10022 127.0.0.1 10023 
+Sep 01 14:40:20.240 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 1 udp-6dfa6b00-b7a5-4d10-a688-fc54b678f913 
+Sep 01 14:40:20.240 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 01 14:40:21.695 HYPERVISOR: exec_cmd: nio create_udp udp-b035da2c-c767-49db-9a3a-1b52497d9a51 10028 127.0.0.1 10029 
+Sep 01 14:40:21.698 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-b035da2c-c767-49db-9a3a-1b52497d9a51 
+Sep 01 14:40:21.699 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 01 14:40:23.142 HYPERVISOR: exec_cmd: nio create_udp udp-6d8acbca-61df-4d49-9405-38862fc57027 10034 127.0.0.1 10035 
+Sep 01 14:40:23.146 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 3 udp-6d8acbca-61df-4d49-9405-38862fc57027 
+Sep 01 14:40:23.146 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 01 17:07:41.064 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Sep 01 17:07:41.066 HYPERVISOR: exec_cmd: vm set_ghost_file R5 C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Sep 01 17:07:41.068 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 01 17:07:41.071 HYPERVISOR: exec_cmd: vm set_config R5 configs\i5_startup-config.cfg configs\i5_private-config.cfg 
+Sep 01 17:07:41.072 HYPERVISOR: exec_cmd: vm start R5 
+Sep 01 17:08:11.658 HYPERVISOR: exec_cmd: vm extract_config R5 
+Sep 01 17:08:41.668 HYPERVISOR: exec_cmd: vm extract_config R5 
+Sep 01 17:41:11.380 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Sep 01 17:41:18.195 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Sep 01 17:41:18.935 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Sep 01 18:04:42.401 HYPERVISOR: exec_cmd: vm extract_config R5 
+Sep 01 18:31:36.129 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 01 18:31:36.129 HYPERVISOR: exec_cmd: vm stop R5 
+Sep 01 18:31:36.365 VM: VM R5 shutdown.
+Sep 01 18:31:36.365 HYPERVISOR: exec_cmd: vm extract_config R5 

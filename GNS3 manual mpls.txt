@@ -1,0 +1,89 @@
+resumen MPLS VPN
+
+Cree 3 vrf para las pruebas, servicios, servers y shared
+
+
+Router 1 
+vrf servicios
+interface Loopback10
+ vrf forwarding servicios
+ ip address 10.2.2.1 255.255.255.255
+!
+Router 2 no importa o exporta nada
+
+Router 3 es el router leaking del router 8 porque necesitamos que las IP de este sean vistas en las vrf particulares y en la general tambien
+entonces armo un tunnel entre el router 3 y el 8 e incluyo solo las rutas que se necesitan en la vrf en el tunnel y el router 3
+las vuelca a la vrf
+vrf definition servicios
+ rd 1:10
+ !
+ address-family ipv4
+  route-target export 1:10
+  route-target export 1:100
+  route-target import 1:10
+  route-target import 3:30
+ exit-address-family
+
+interface Loopback10
+ vrf forwarding servicios
+ ip address 10.3.3.1 255.255.255.255
+!
+Router 4
+vrf definition servers
+ rd 2:20
+ !
+ address-family ipv4
+  route-target export 2:20
+  route-target import 2:20
+  route-target import 3:30
+ exit-address-family
+!
+interface Loopback20
+ vrf forwarding servers
+ ip address 10.20.1.4 255.255.255.255
+!
+
+Router 5
+vrf definition shared
+ rd 3:30
+ !
+ address-family ipv4
+  route-target export 3:30
+  route-target import 1:100
+   exit-address-family
+!
+interface Loopback5
+ vrf forwarding shared
+ ip address 10.5.5.5 255.255.255.255
+!
+
+Router 6
+vrf definition servers
+ rd 2:20
+ !
+ address-family ipv4
+  route-target export 2:20
+  route-target import 2:20
+ exit-address-family
+!
+vrf definition servicios
+ rd 1:10
+ !
+ address-family ipv4
+  route-target export 1:10
+  route-target import 1:10
+ exit-address-family
+!
+interface Loopback10
+ vrf forwarding servicios
+ ip address 10.2.2.6 255.255.255.255
+!
+interface Loopback20
+ vrf forwarding servers
+ ip address 10.20.1.6 255.255.255.255
+!
+Router 7
+Router reflector
+
+
+

@@ -1,0 +1,39 @@
+Sep 01 14:40:12.068 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 01 14:40:12.071 HYPERVISOR: Started on IP = localhost, TCP port = 25715.
+Sep 01 14:40:12.532 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 01 14:40:12.532 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips 
+Sep 01 14:40:12.533 GENERAL: working_dir=C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips
+Sep 01 14:40:12.533 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\3b52b518-1ebb-4036-bd92-8a1e8f48ac15 
+Sep 01 14:40:12.534 GENERAL: working_dir=C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\3b52b518-1ebb-4036-bd92-8a1e8f48ac15
+Sep 01 14:40:12.534 HYPERVISOR: exec_cmd: vm create R7 7 c7200 
+Sep 01 14:40:12.538 VM: VM R7 created.
+Sep 01 14:40:12.539 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5014 
+Sep 01 14:40:12.539 HYPERVISOR: exec_cmd: c7200 get_mac_addr R7 
+Sep 01 14:40:12.539 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 01 14:40:12.539 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 0 C7200-IO-FE 
+Sep 01 14:40:12.540 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Sep 01 14:40:12.540 HYPERVISOR: exec_cmd: vm set_exec_area R7 64 
+Sep 01 14:40:12.541 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 01 14:40:12.541 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x60189214 
+Sep 01 14:40:12.542 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Sep 01 14:40:12.543 HYPERVISOR: exec_cmd: c7200 set_mac_addr R7 ca07.220c.0000 
+Sep 01 14:40:12.543 HYPERVISOR: exec_cmd: vm set_nvram R7 512 
+Sep 01 14:40:12.543 HYPERVISOR: exec_cmd: vm set_ram R7 512 
+Sep 01 14:40:12.544 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 01 14:40:12.544 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 PA-4E 
+Sep 01 14:40:20.300 HYPERVISOR: exec_cmd: nio create_udp udp-327b92f8-f10c-484b-98fc-5a7362ebbcd0 10026 127.0.0.1 10027 
+Sep 01 14:40:21.687 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-327b92f8-f10c-484b-98fc-5a7362ebbcd0 
+Sep 01 14:40:21.688 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 01 17:07:41.605 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+Sep 01 17:07:41.606 HYPERVISOR: exec_cmd: vm set_ghost_file R7 C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Sep 01 17:07:41.606 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 01 17:07:41.646 HYPERVISOR: exec_cmd: vm set_config R7 configs\i7_startup-config.cfg configs\i7_private-config.cfg 
+Sep 01 17:07:41.647 HYPERVISOR: exec_cmd: vm start R7 
+Sep 01 17:08:12.295 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 01 17:08:42.289 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 01 17:40:47.236 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Sep 01 17:40:55.517 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Sep 01 18:31:36.407 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 01 18:31:36.409 HYPERVISOR: exec_cmd: vm stop R7 
+Sep 01 18:31:36.561 VM: VM R7 shutdown.
+Sep 01 18:31:36.562 HYPERVISOR: exec_cmd: vm extract_config R7 

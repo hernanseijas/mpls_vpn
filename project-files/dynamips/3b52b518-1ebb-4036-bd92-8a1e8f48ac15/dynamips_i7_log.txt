@@ -1,0 +1,64 @@
+Aug 27 16:28:20.520 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Aug 27 16:28:20.523 HYPERVISOR: Started on IP = localhost, TCP port = 1099.
+Aug 27 16:28:20.976 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 27 16:28:20.977 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips 
+Aug 27 16:28:20.978 GENERAL: working_dir=C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips
+Aug 27 16:28:20.979 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\c4d64523-20b0-4226-8a92-40c528ccbe87 
+Aug 27 16:28:20.982 GENERAL: working_dir=C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\c4d64523-20b0-4226-8a92-40c528ccbe87
+Aug 27 16:28:20.982 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Aug 27 16:28:20.987 VM: VM R2 created.
+Aug 27 16:28:20.988 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5009 
+Aug 27 16:28:20.988 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Aug 27 16:28:20.988 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 27 16:28:20.989 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Aug 27 16:28:20.990 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Aug 27 16:28:20.991 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Aug 27 16:28:20.991 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 27 16:28:20.992 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60189214 
+Aug 27 16:28:20.994 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Aug 27 16:28:20.995 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.5cd4.0000 
+Aug 27 16:28:20.995 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Aug 27 16:28:20.996 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Aug 27 16:28:20.996 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 27 16:28:20.997 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-4E 
+Aug 27 16:28:26.960 HYPERVISOR: exec_cmd: nio create_udp udp-c6314769-dd26-4b2e-bc23-b9c577430d4d 10000 127.0.0.1 10001 
+Aug 27 16:28:27.847 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-c6314769-dd26-4b2e-bc23-b9c577430d4d 
+Aug 27 16:28:27.848 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 27 16:28:27.904 HYPERVISOR: exec_cmd: nio create_udp udp-d56be312-ff13-4bc2-89bd-3a0055843701 10004 127.0.0.1 10005 
+Aug 27 16:28:27.908 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-d56be312-ff13-4bc2-89bd-3a0055843701 
+Aug 27 16:28:27.908 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 27 18:54:45.538 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Aug 27 18:54:45.542 VM: VM Ghost created.
+Aug 27 18:54:45.544 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/ry28650/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Aug 27 18:54:45.545 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 27 18:54:45.545 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Aug 27 18:54:45.545 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Aug 27 18:54:45.546 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 27 18:54:45.606 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Aug 27 18:54:45.607 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 27 18:54:46.512 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 27 18:54:46.512 HYPERVISOR: exec_cmd: vm stop Ghost 
+Aug 27 18:54:46.756 VM: VM Ghost shutdown.
+Aug 27 18:54:46.757 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Aug 27 18:54:46.840 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 27 18:54:46.840 VM: VM Ghost destroyed.
+Aug 27 18:54:46.887 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Aug 27 18:54:46.888 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\ry28650\GNS3\projects\MPLS II basico\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Aug 27 18:54:46.890 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 27 18:54:46.893 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Aug 27 18:54:46.896 HYPERVISOR: exec_cmd: vm start R2 
+Aug 27 18:55:17.566 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 27 18:55:47.554 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 31 08:33:52.455 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 31 08:33:52.456 HYPERVISOR: exec_cmd: vm stop R2 
+Aug 31 08:33:52.723 VM: VM R2 shutdown.
+Aug 31 08:33:52.738 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 31 08:33:55.832 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 31 08:33:55.834 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 31 08:33:56.398 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 31 08:33:56.401 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 31 08:33:56.413 HYPERVISOR: exec_cmd: vm delete R2 
+Aug 31 08:33:56.413 VM: VM R2 destroyed.
+Aug 31 08:33:56.416 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 31 08:33:56.790 HYPERVISOR: Stopped.
+Aug 31 08:33:56.790 GENERAL: reset done.
